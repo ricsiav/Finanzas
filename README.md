@@ -19,7 +19,7 @@ Este documento reúne toda la base teórica y técnica necesaria para dar vida a
 
 # 📘 Diseño del Dominio — Sistema Financiero con Workspaces (DDD + .NET 9)
 
-Este documento formaliza todo lo discutido respecto al **modelo de dominio**, **agregados**, **entities**, **bounded contexts**, **value objects**, **motivos de cada PK**, y la arquitectura general basada en **DDD** para el Sistema Financiero con Workspaces.
+Este documento formaliza todo respecto al **modelo de dominio**, **agregados**, **entities**, **bounded contexts**, **value objects**, **motivos de cada PK**, y la arquitectura general basada en **DDD** para el Sistema Financiero con Workspaces.
 
 Cada sección incluye:
 
@@ -28,8 +28,6 @@ Cada sección incluye:
 * Código sugerido
 * Enlaces a diagramas
 * Código del diagrama (PlantUML / ERD)
-
-> ⚠️ *Nota:* Los diagramas se incluyen como **enlace + código PlantUML** para que puedas pegarlos directamente donde los necesites.
 
 ---
 
