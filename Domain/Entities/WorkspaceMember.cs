@@ -25,5 +25,11 @@ namespace Domain.Entities
             Role = role;
             CreatedAt = UpdatedAt = DateTime.UtcNow;
         }
+
+        internal void UpdateRole(WorkspaceRole role)
+        {
+            Role = role;
+            UpdatedAt = DateTime.UtcNow;
+        }
     }
 }

@@ -71,5 +71,24 @@ namespace Domain.AggregateRoots
             UpdatedBy = updatedBy;
             UpdatedAt = DateTime.UtcNow;
         }
+
+        public void UpdateDetails(Money amount, DateOnly date, string? description, Guid updatedBy)
+        {
+            Amount = amount;
+            Date = date;
+            Description = description;
+            UpdatedBy = updatedBy;
+            UpdatedAt = DateTime.UtcNow;
+        }
+
+        public void Reassign(Guid accountId, Guid categoryId, Guid sourceId, TransactionType type, Guid updatedBy)
+        {
+            AccountId = accountId;
+            CategoryId = categoryId;
+            SourceId = sourceId;
+            Type = type;
+            UpdatedBy = updatedBy;
+            UpdatedAt = DateTime.UtcNow;
+        }
     }
 }

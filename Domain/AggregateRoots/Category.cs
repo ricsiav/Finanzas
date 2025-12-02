@@ -37,5 +37,18 @@ namespace Domain.AggregateRoots
             Name = newName;
             UpdatedAt = DateTime.UtcNow;
         }
+
+        public void ChangeAppearance(string icon, string color)
+        {
+            Icon = icon;
+            Color = color;
+            UpdatedAt = DateTime.UtcNow;
+        }
+
+        public void MoveTo(Guid? parentCategoryId)
+        {
+            ParentCategoryId = parentCategoryId;
+            UpdatedAt = DateTime.UtcNow;
+        }
     }
 }
