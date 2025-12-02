@@ -39,5 +39,17 @@ namespace Domain.AggregateRoots
 
             UpdatedAt = DateTime.UtcNow;
         }
+
+        public void Rename(string newName)
+        {
+            Name = newName;
+            UpdatedAt = DateTime.UtcNow;
+        }
+
+        public void ChangeType(string newType)
+        {
+            Type = newType;
+            UpdatedAt = DateTime.UtcNow;
+        }
     }
 }

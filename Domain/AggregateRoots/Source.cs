@@ -31,5 +31,11 @@ namespace Domain.AggregateRoots
             Name = newName;
             UpdatedAt = DateTime.UtcNow;
         }
+
+        public void ChangeType(SourceType type)
+        {
+            Type = type;
+            UpdatedAt = DateTime.UtcNow;
+        }
     }
 }

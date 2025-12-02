@@ -59,6 +59,19 @@ namespace Domain.AggregateRoots
             UpdatedAt = DateTime.UtcNow;
         }
 
+        public void UpdateDetails(
+            RecurrenceFrequency frequency,
+            Money amount,
+            DateOnly nextRun,
+            string? descriptionTemplate)
+        {
+            Frequency = frequency;
+            Amount = amount;
+            NextRun = nextRun;
+            DescriptionTemplate = descriptionTemplate;
+            UpdatedAt = DateTime.UtcNow;
+        }
+
         public Transaction GenerateTransaction(Guid createdBy)
         {
             return new Transaction(
